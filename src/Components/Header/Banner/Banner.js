@@ -9,8 +9,10 @@ function Banner() {
     axios
       .get(`https://api.themoviedb.org/3/trending/movie/week?api_key=${API_KEY}`)
       .then((response) => {
-        console.log(response.data.results[2]); // Logs the trending movies data
-      setMovie(response.data.results[2])
+        const movies = response.data.results;
+        const randomIndex = Math.floor(Math.random() * movies.length); // Get random index
+        console.log(movies[randomIndex]); // Log the selected random movie
+        setMovie(movies[randomIndex]); // Set the random movie
       
       })
       .catch((error) => {
