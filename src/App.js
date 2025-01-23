@@ -2,7 +2,7 @@
 import React from "react";
 import Header from "./Components/Header/Header";
 import './App.css'
-import {action,originals} from './url'
+import {action,originals,comedy} from './url'
 import Banner from "./Components/Header/Banner/Banner";
 import Rowpost from "./Components/RowPost/Rowpost";
 function App() {
@@ -12,6 +12,7 @@ function App() {
      <Banner/>
      <Rowpost url={originals} title='Netflix Originals'/>
      <Rowpost url={action} title='Action Movies' isSmall={true}/>
+     <Rowpost url={comedy} title='Comedy Movies' isSmall={true}/>
     </div>
   );
 }
