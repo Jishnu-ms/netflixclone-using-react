@@ -5,6 +5,7 @@
 }
 
 .posters{
+   
     display:flex;
     padding:20px;
     overflow-x: scroll;
@@ -12,10 +13,18 @@
 
 }
 
-.poster{
-    max-height:250px;
-    margin-right:10px;
+.poster {
+    width: 4000px; /* Increased width */
+    max-height: 250px;
+    margin-right: 10px;
 }
+
+.smallposter {
+    width: 200px; /* Adjust the width for small posters */
+    max-height: 150px;
+    margin-right: 10px;
+}
+
 
 .posters::-webkit-scrollbar{
     display: none;
