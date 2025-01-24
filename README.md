@@ -1,7 +1,7 @@
 # 🌟 Netflix Clone  
 
 🎥 A Netflix-inspired web application built with React that showcases movies categorized into sections like Netflix Originals, Action Movies, and Comedy Movies.
-
+The Website Updates the list on each Refresh
 ---
 
 ## 📖 Table of Contents  
